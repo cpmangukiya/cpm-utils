@@ -8,7 +8,7 @@ module.exports = function () {
 
     r.launchExpressServer = function (middlewareFunction) {
         require("./app")(middlewareFunction);
-    };
+    }
 
     return r
-}();
+}()

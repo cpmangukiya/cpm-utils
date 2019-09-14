@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cpmangukiya/cpm-util.git"
+    "url": "git+https://github.com/cpmangukiya/cpm-utils.git"
   },
   "keywords": [
     "utils",
@@ -20,9 +20,9 @@
   "author": "Chintan P Mangukiya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cpmangukiya/cpm-util/issues"
+    "url": "https://github.com/cpmangukiya/cpm-utils/issues"
   },
-  "homepage": "https://github.com/cpmangukiya/cpm-util#readme",
+  "homepage": "https://github.com/cpmangukiya/cpm-utils#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
