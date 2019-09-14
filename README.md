@@ -17,9 +17,9 @@ Tiny express app is configured to call a middleware function of your own named "
  ```
  var cpmUtils = require('cpm-util');
  cpmUtils.doSomething = function(req, res, next) {
-     // Do Your Stuff
+     // Do Your Stuff. Play with req, res, next.
  }
  // Run server by hitting **node app** in console
- // And then hit http://localhost:3000/doSomething to see your code being executed. Play with req, res, next variables passed to your function.
+ // And then hit http://localhost:3000/doSomething to see your code being executed.
  // Healthecheck URL : http://localhost:3000/healthcheck
  ```
