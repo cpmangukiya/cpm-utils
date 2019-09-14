@@ -6,7 +6,6 @@ Install the package using npm :
  npm install cpm-util --save
  ```
 Then, require the package and use it:
- [Comment: To check if this usage is proper]
  ```
  var isEmpty = require('cpm-util');
  console.log(isEmpty("")); // true [Sample]
