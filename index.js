@@ -4,5 +4,6 @@ module.exports = function () {
         // Returns true if the input is either undefined, null, empty, {} or []. false otherwise.
         return (input === undefined || input === null || input === '' || input === {} || input === [])
     }
+    r.doSomething = null;
     return r
 }();

@@ -1,12 +1,21 @@
 const express = require('express')
+const index = require('./index.js')
 const app = express()
 const port = 3000
 
-app.get("/helloworld", function (req, res, next) {
+app.get("/healthcheck", function (req, res, next) {
     res.status(200).send("Hello World! Server is up and healthy!")
 })
 
-app.get('/favicon.ico', (req, res, next) => res.status(204).end());
+app.get('/favicon.ico', (req, res, next) => res.status(204).end())
+
+app.use("/doSomething", function (req, res, next) {
+    try {
+        index.doSomething(req, res, next)
+    } catch (err) {
+        next(err)
+    }
+})
 
 app.use("/", function (req, res, next) {
     next("Not Allowed!")

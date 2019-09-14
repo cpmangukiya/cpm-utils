@@ -7,9 +7,19 @@ Install the package using npm :
  ```
 Then, require the package and use it:
  ```
- var isEmpty = require('cpm-util');
- console.log(isEmpty("")); // true [Sample]
- console.log(v("Hello World")); // false [Sample]
- console.log(v({})); // false [Sample]
- console.log(v({ "hello" : "world" })); // false [Sample]
+ var cpmUtils = require('cpm-util');
+ console.log(cpmUtils.isEmpty("")); // true [Sample]
+ console.log(cpmUtils.isEmpty("Hello World")); // false [Sample]
+ console.log(cpmUtils.isEmpty({})); // false [Sample]
+ console.log(cpmUtils.isEmpty({ "hello" : "world" })); // false [Sample]
+ ```
+Tiny express app is configured to call a middleware function of your own named "doSomething". Express Exception handling can be done by calling next(err) appropriately :
+ ```
+ var cpmUtils = require('cpm-util');
+ cpmUtils.doSomething = function(req, res, next) {
+     // Do Your Stuff
+ }
+ node app;
+ // And then hit http://localhost:3000/doSomething to see your code being executed
+ // Healthecheck URL : http://localhost:3000/healthcheck
  ```
