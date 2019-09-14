@@ -21,5 +21,5 @@ Tiny express app is configured to call a middleware function of your own on "/do
     res.send("My Function Called!");
  });
  // And then hit http://localhost:3000/doSomething to execute your code.
- // Healthecheck URL : http://localhost:3000/healthcheck
+ // Healthcheck URL : http://localhost:3000/healthcheck
  ```
