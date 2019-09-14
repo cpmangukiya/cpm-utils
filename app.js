@@ -9,13 +9,7 @@ app.get("/healthcheck", function (req, res, next) {
 
 app.get('/favicon.ico', (req, res, next) => res.status(204).end())
 
-app.use("/doSomething", function (req, res, next) {
-    try {
-        index.doSomething(req, res, next)
-    } catch (err) {
-        next(err)
-    }
-})
+app.use("/doSomething", index.doSomething)
 
 app.use("/", function (req, res, next) {
     next("Not Allowed!")
