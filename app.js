@@ -27,4 +27,5 @@ module.exports = function (middlewareFunction) {
 
     app.listen(port, () => console.log(`cpm-util app listening on port ${port}!`))
     return r;
+    
 };
