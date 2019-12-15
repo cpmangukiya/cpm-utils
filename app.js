@@ -25,6 +25,7 @@ module.exports = function (middlewareFunction) {
         res.status(405).send("Ooops! " + err)
     })
 
+    // Start server
     app.listen(port, () => console.log(`cpm-util app listening on port ${port}!`))
     return r;
     
